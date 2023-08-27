@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Huddle landing page</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      .colors {
+        color: hsl(257, 40%, 49%);
+        color: hsl(300, 69%, 71%);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        background-image: url("./images/bg-desktop.svg");
+        background-color: hsl(257, 40%, 49%);
+      }
+      header {
+        margin: 5%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .second-container {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        display: flex;
+        width: 90%;
+      }
+
+      .right-content {
+        padding: 30px;
+        color: white;
+      }
+      .right-content h1 {
+        font-size: 2.5rem;
+      }
+      .right-content p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+
+      .btn {
+        height: 40px;
+        width: 30%;
+        background-color: white;
+        border: none;
+        border-radius: 150px;
+        color: hsl(257, 40%, 49%);
+        cursor: pointer;
+      }
+      .main-img {
+        width: 100%;
+      }
+      #main-img {
+        width: 100%;
+      }
+
+      /* For Mobile size screens */
+      @media only screen and (max-width: 375px) {
+        body {
+          background-image: url("./images/bg-mobile.svg");
+        }
+        .second-container {
+          width: 95%;
+          flex-direction: column;
+        }
+        .right-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .btn {
+          width: 50%;
+          margin: auto;
+        }
+        .right-content h1 {
+          font-size: 1.5rem;
+        }
+        .right-content p {
+          font-size: 0.8rem;
+          line-height: 1rem;
+          text-align: center;
+        }
+      }
+      /* For Tablet Size Screens */
+      @media only screen and (max-width: 1000px) and (min-width: 376px) {
+        .second-container {
+          width: 90%;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header><img src="./images/logo.svg" alt="logo" id="main-logo" /></header>
+    <main>
+      <div class="container">
+        <div class="second-container">
+          <div class="main-img">
+            <img
+              id="main-img"
+              src="./images/illustration-mockups.svg"
+              alt="mockups"
+            />
+          </div>
+          <div class="right-content">
+            <h1>
+              Build The Community
+              <div class="div-h1-sub">Your Fans Will Love</div>
+            </h1>
+            <p>
+              Huddle re-imagines the way we build communities. You have a voice,
+              but so does your audience. Create connections with your users as
+              you engage in genuine discussion.
+            </p>
+            <button class="btn">Register</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
